@@ -2,6 +2,7 @@ import 'package:attendanceapp/homescreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
+import 'package:month_year_picker/month_year_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'loginscreen.dart';
@@ -27,6 +28,9 @@ class MyApp extends StatelessWidget {
       home: KeyboardVisibilityProvider(
         child: AuthCheck(),
       ),
+      localizationsDelegates: const [
+        MonthYearPickerLocalizations.delegate,
+      ],
     );
   }
 }
