@@ -37,7 +37,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
               child: Text(
                 "My Attendance",
                 style: TextStyle(
-                  color: Colors.black54,
+                  color: Colors.black,
                   fontFamily: "NexaBold",
                   fontSize: screenWidth / 18,
                 ),
@@ -52,7 +52,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
                     //DateFormat('MMMM').format(DateTime.now()),
                     _month,
                     style: TextStyle(
-                      color: Colors.black54,
+                      color: Colors.black,
                       fontFamily: "NexaBold",
                       fontSize: screenWidth / 18,
                     ),
@@ -106,7 +106,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
                     child: Text(
                       "Pick a Month",
                       style: TextStyle(
-                        color: Colors.black54,
+                        color: Colors.black,
                         fontFamily: "NexaBold",
                         fontSize: screenWidth / 18,
                       ),
