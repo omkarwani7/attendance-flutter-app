@@ -31,9 +31,9 @@ dependencies:
   flutter:
     sdk: flutter
   
-  firebase_core: ^2.10.0
+  firebase_core: ^2.11.0
   flutter_keyboard_visibility: ^5.4.1
-  cloud_firestore: ^4.5.3
+  cloud_firestore: ^4.6.0
   shared_preferences: ^2.1.0
   font_awesome_flutter: ^10.4.0
   persistent_bottom_nav_bar_v2: ^4.0.3
@@ -42,6 +42,13 @@ dependencies:
   month_year_picker: ^0.2.0+3
   geocoding: ^2.1.0
   location: ^4.4.0
+  image_picker: ^0.8.7+4
+  firebase_storage: ^11.1.2
+  firebase_core_platform_interface: ^4.7.0
+  firebase_auth: ^4.5.0
+  firebase_messaging: ^14.5.0
+  firebase_crashlytics: ^3.2.0
+
   
 
 
