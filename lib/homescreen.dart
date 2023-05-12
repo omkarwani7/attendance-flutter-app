@@ -46,17 +46,21 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void _getCredentials() async {
-    DocumentSnapshot doc = await FirebaseFirestore.instance
-        .collection("Employee")
-        .doc(User.id)
-        .get();
-    setState(() {
-      User.canEdit = doc['canEdit'];
-      User.firstName = doc['firstName'];
-      User.lastName = doc['lastName'];
-      User.birthDate = doc['birthDate'];
-      User.address = doc['address'];
-    });
+    try {
+      DocumentSnapshot doc = await FirebaseFirestore.instance
+          .collection("Employee")
+          .doc(User.id)
+          .get();
+      setState(() {
+        User.canEdit = doc['canEdit'];
+        User.firstName = doc['firstName'];
+        User.lastName = doc['lastName'];
+        User.birthDate = doc['birthDate'];
+        User.address = doc['address'];
+      });
+    } catch (e) {
+      return;
+    }
   }
 
   void _startLocationService() async {
