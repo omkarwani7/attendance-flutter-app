@@ -180,13 +180,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
                 if (User.canEdit) {
                   if (firstName.isEmpty) {
-                    showSnackBar("Please enter youe first name!");
+                    showSnackBar("Please enter youe First name!");
                   } else if (lastName.isEmpty) {
-                    showSnackBar("Please enter you last name!");
+                    showSnackBar("Please enter you Last name!");
                   } else if (birthDate.isEmpty) {
-                    showSnackBar("Please enter your birth date!");
+                    showSnackBar("Please enter your Birth date!");
                   } else if (address.isEmpty) {
-                    showSnackBar("Please enter your address!");
+                    showSnackBar("Please enter your Address!");
                   } else {
                     await FirebaseFirestore.instance
                         .collection("Employee")
