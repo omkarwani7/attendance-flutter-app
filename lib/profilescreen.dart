@@ -70,7 +70,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 width: 120,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(18),
                   color: primary,
                 ),
                 child: Center(
@@ -81,7 +81,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           size: 80,
                         )
                       : ClipRRect(
-                          borderRadius: BorderRadius.circular(20),
+                          borderRadius: BorderRadius.circular(18),
                           child: Image.network(User.profilePicLink),
                         ),
                 ),
@@ -167,9 +167,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         } else if (lastName.isEmpty) {
                           showSnackBar("Please enter your Last name!");
                         } else if (birthDate.isEmpty) {
-                          showSnackBar("Please enter your Birth date!");
+                          showSnackBar("Please enter your Birth Date!");
                         } else if (address.isEmpty) {
-                          showSnackBar("Please enter your Address!");
+                          showSnackBar("Please enter your address!");
                         } else {
                           await FirebaseFirestore.instance
                               .collection("Employee")
