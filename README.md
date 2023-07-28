@@ -1,6 +1,7 @@
 # attendanceapp
 
-A new Flutter project.
+## Description - 
+An app to ease the process of recording employee attendance with features such as a sliding bar, as well as an QR code scanner that can be used to record the check in and check out time, and a feature that records the live location of the person at the time of attendance to make the process transparent.
 
 ## Getting Started
 
@@ -15,5 +16,4 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-## Description - 
-An app to ease the process of recording employee attendance with features such as a sliding bar, as well as an QR code scanner that can be used to record the check in and check out time, and a feature that records the live location of the person at the time of attendance to make the process transparent.
+
